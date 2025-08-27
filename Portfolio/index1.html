@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawan - portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Mukta:wght@300&family=Poppins:wght@400;600;700&family=Roboto+Condensed:ital,wght@0,300;1,400&family=Ubuntu:ital,wght@1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://kit.fontawesome.com/38f8533cd0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <div class="left">Pawan's Portfolio</div>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                <div>Hi, My name is <span class="purpel"> Pawan Yadav</span></div>
+                <div>and I am a Passionate</div>
+                
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="img/Pawan2.png" alt="">
+            </div>
+        </section>
+        <!-- <hr> -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="img/devloper.png" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I am a web developer worked on projects based on HTML,CSS.With a passion for open-source
+                            development, specializes in actively contributing to projects, solving issues, and enhancing
+                            functionality. Proficient in C, C++, Python, JavaScript, HTML/CSS.Strong soft skills in time
+                            management, teamwork, problem-solving, and effective communication. Seeks opportunities to
+                            innovate and collaborate on impactful projects. Connect to explore new possibilities in the
+                            world of technology.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skill</p>
+                            <p class="tab-links" onclick="opentab('exeperience')">Exeperience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming</span><br>C, C++, Java, Python</li>
+                                <li><span>Web D</span><br>HTML</li>
+                                <li><span>Web D</span><br>CSS</li>
+                                <li><span>Web d</span><br>JavaScript</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="exeperience">
+                            <ul>
+                                <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
+                                <li><span>Web Devlopment</span><br>Web app Devlopment</li>
+                                <li><span>Web Devloper</span><br>Web Designer</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>High School</span><br>C P I C KUSHINAGAR </li>
+                                <li><span>Intermediate</span><br>C P I C KUSHINAGAR</li>
+                                <li><span>B.Tech</span><br>Chhtrapati Sahu Ji Mahraj University, Kanpur</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <hr> -->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>Web design and development is an umbrella term that describes the process of creating a
+                            website. Like the name suggests, it involves two major skill sets: web design and web
+                            development. Web design determines the look and feel of a website, while web development
+                            determines how it functions.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop-simple"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>UX design stands for user experience design, while UI design stands for user interface
+                            design. Both are important facets of the custom software development process, and both
+                            involve working closely with users to create interfaces that are both effective and easy to
+                            use.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>App Design</h2>
+                        <p>App design is the look and feel of a mobile application. This includes all of the visual
+                            elements and interactive elements that impact how the app functions. Mobile app design
+                            combines two concepts—UI and UX. The user interface (UI) encompasses the app's look and
+                            feel.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <hr> -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="img/work-1.png" alt="">
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p>The app connects to you the talented people around the world.
+                                Download it from play store
+                            </p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="img/work-2.png" alt="">
+                        <div class="layer">
+                            <h3>Music App</h3>
+                            <p>The app connects to you the talented people around the world.
+                                Download it from play store
+                            </p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="img/work-3.png" alt="">
+                        <div class="layer">
+                            <h3>Online Shoping App</h3>
+                            <p>The app connects to you the talented people around the world.
+                                Download it from play store
+                            </p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+        <!-- <hr> -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <div class="cl"></div>
+                        <p><i class="fa-sharp fa-solid fa-paper-plane"></i>pawanyadav35869@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i>9369915491</p>
+                        <div class="social-icon">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/pawan-yadav-181a67251"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet" onsubmit="return redirectToThanksPage();" action=""
+                            id="form">
+                            <input type="text" name="Name" placeholder="Your name" required>
+                            <input type="Email" name="Email" placeholder="Your email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2" id="b">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Pawan's Devloper Portfolio</h3>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; CodeWithPawan | All rights reserved
+        </div>
+    </footer>
+
+    <script>
+        function redirectToThanksPage() {
+            // Redirect to the thank you page
+            window.location.href = "thanks.html";
+            return false; // Prevent actual form submission
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwJm1MDxEyIK1W8xfxiN_oHGjMeiqjXyaMKZexB9Okbu1bt6tv0P9Sv4_bDHr0nE0cfoA/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script>
+        // JavaScript to dynamically update the "Passionate" text
+        const element = document.getElementById('element');
+        const words = ["Developer", "Designer", "Learner", "Creator"];
+        let index = 0;
+
+        function changeWord() {
+            element.textContent = words[index];
+            index = (index + 1) % words.length;
+        }
+
+        setInterval(changeWord, 2000); // Change word every 2 seconds
+    </script>
+    
+</body>
+
+</html>
