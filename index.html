@@ -60,18 +60,19 @@
 
                         <div class="tab-titles">
                             <p class="tab-links active-link" onclick="opentab('skills')">Skill</p>
-                            <p class="tab-links" onclick="opentab('exeperience')">Exeperience</p>
+                            <p class="tab-links" onclick="opentab('experience')">Exeperience</p>
                             <p class="tab-links" onclick="opentab('education')">Education</p>
                         </div>
                         <div class="tab-contents active-tab" id="skills">
                             <ul>
-                                <li><span>Programming</span><br>C, C++, Java, Python</li>
-                                <li><span>Web D</span><br>HTML</li>
-                                <li><span>Web D</span><br>CSS</li>
-                                <li><span>Web d</span><br>JavaScript</li>
+                                <li><span>Languages</span><br>C, C++, Python, JavaScript</li>
+                                <li><span>Web development</span><br>HTML,Tailwind CSS ,React.js, Node.js, Express.js, Flask</li>
+                                <li><span>Databases</span><br>MySQL, MongoDB</li>
+                                <li><span>Technology</span><br>Git, SVM, CNNs, NLP</li>
+                                <li><span>Others</span><br>DBMS, OS, Networking, Problem-solving</li>
                             </ul>
                         </div>
-                        <div class="tab-contents" id="exeperience">
+                        <div class="tab-contents" id="experience">
                             <ul>
                                 <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
                                 <li><span>Web Devlopment</span><br>Web app Devlopment</li>
@@ -80,7 +81,7 @@
                         </div>
                         <div class="tab-contents" id="education">
                             <ul>
-                                <li><span>High School</span><br>C P I C KUSHINAGAR </li>
+                                <li><span>High School</span><br>C P I C KUSHINAGAR</li>
                                 <li><span>Intermediate</span><br>C P I C KUSHINAGAR</li>
                                 <li><span>B.Tech</span><br>Chhtrapati Sahu Ji Mahraj University, Kanpur</li>
                             </ul>
@@ -132,29 +133,29 @@
                     <div class="work">
                         <img src="img/work-1.png" alt="">
                         <div class="layer">
-                            <h3>Social Media App</h3>
+                            <h3>Job -Portal</h3>
                             <p>The app connects to you the talented people around the world.
-                                Download it from play store
+                                Watch  it from Google
                             </p>
-                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                            <a href="https://careercatalystjobportal.netlify.app"><i class="fa-solid fa-up-right-from-square"></i></a>
                         </div>
                     </div>
                     <div class="work">
                         <img src="img/work-2.png" alt="">
                         <div class="layer">
-                            <h3>Music App</h3>
+                            <h3>Vital-Care</h3>
                             <p>The app connects to you the talented people around the world.
-                                Download it from play store
+                                Watch  it from Google
                             </p>
-                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                            <a href="https://github.com/starktonygithub/VitalCare_frontend"><i class="fa-solid fa-up-right-from-square"></i></a>
                         </div>
                     </div>
                     <div class="work">
                         <img src="img/work-3.png" alt="">
                         <div class="layer">
-                            <h3>Online Shoping App</h3>
+                            <h3>Sentiment Analysis</h3>
                             <p>The app connects to you the talented people around the world.
-                                Download it from play store
+                                Watch  it from Google
                             </p>
                             <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
                         </div>
@@ -169,7 +170,7 @@
                 <div class="row">
                     <div class="contact-left">
                         <h1 class="sub-title">Contact Me</h1>
-                        <div class="cl"></div>
+                        
                         <p><i class="fa-sharp fa-solid fa-paper-plane"></i>pawanyadav35869@gmail.com</p>
                         <p><i class="fa-solid fa-square-phone"></i>9369915491</p>
                         <div class="social-icon">
@@ -178,6 +179,7 @@
                             <a href=""><i class="fa-brands fa-instagram"></i></a>
                             <a href="https://www.linkedin.com/in/pawan-yadav-181a67251"><i class="fa-brands fa-linkedin"></i></a>
                         </div>
+                        <a href="" class="btn btn2">Download CV</a>
                         
                     </div>
                     <div class="contact-right">
@@ -238,6 +240,21 @@
 
         setInterval(changeWord, 2000); // Change word every 2 seconds
     </script>
+    <script>
+    var tablinks =document.getElementsByClassName("tab-links")
+    var tabcontents =document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname) {
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+     </script>
     
 </body>
 
